@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url(app.css);
+
+:root {
+  --main-gradient:  color blue;
+  --glass-bg: rgba(255, 255, 255, 0.15); /* More visible */
+  --glass-border: rgba(255, 255, 255, 0.3); /* Brighter border */
+  --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+  --text-soft: #f1f1f1;
+}
+
+* {
+  box-sizing: border-box;
+  
+  font-family: 'Inter', sans-serif;
+}
+
+.card {
+  width: 320px;
+  height: auto;
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 24px;
+  border: 2.2px solid var(--glass-border);
+  padding: 2rem;
+  border: 2.2px solid rgb(19, 42, 191);
+  margin: 1rem;
+  color: var(--text-soft);
+  box-shadow: var(--shadow), inset 0 0 0.5px rgba(255, 255, 255, 0.10);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.card-img img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 5px solid rgb(53, 85, 211);
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+}
+
+.card-name {
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  color: rgb(21, 21, 26);
+}
+
+.card p {
+  font-size: 1.1rem;
+  margin: 0.4rem 0;
+  text-align: center;
+  line-height: 1.6;
+  /* color: var(--text-soft); */
+  color: rgb(7, 7, 138);
+}
+
+.card strong {
+  color: #080d3a;
+  font-weight: 600;
+}
+
+.appointment-btn {
+  margin-top: 1rem;
+  padding: 0.85rem 2.2rem;
+  background-image: var(--main-gradient);
+  color: white;
+  font-weight: 400;
+  margin-top: 5px;
+  font-size: 12px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  background-color: blue;
+}
+
+.appointment-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+}

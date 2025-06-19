@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --bg-gradient: linear-gradient(135deg, #d3cce3, #5066f4);
+  --text-color: #1f2937;
+  --input-bg: #f9fafb;
+  --border-color: #d1d5db;
+  --btn-bg: #4f46e5;
+  --btn-hover: #6366f1;
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.doctorApplySection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #6f87e6, #f2faff);
+  min-height: 100vh;
+  padding: 2rem;
+  background: var(--bg-gradient);
+  font-family: 'Inter', sans-serif;
+}
+
+.doctorApplyWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: white;
+}
+
+.leftImage {
+  width: 50%;
+  background-color: #3217cc;
+}
+
+.leftImage img {
+  width: 80%;
+  height: 95%;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+.rightForm {
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to right, #7989c7, #f2faff);
+}
+
+.formHeading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  color: black;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.formInput {
+  padding: 0.9rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--input-bg);
+  font-size: 1rem;
+  color: var(--text-color);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  color: #040d18;
+}
+
+.formInput:focus {
+  border-color: var(--btn-bg);
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+option {
+  text-transform: capitalize;
+}
+
+.formBtn {
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #3217cc;
+  background-color: var(--btn-bg);
+  background-color: #5339e3;
+  border: none;
+  width: 90px;
+  margin-left: 140px;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.formBtn:hover {
+  background-color: var(--btn-hover);
+  transform: translateY(-2px);
+  background-color: #2610a3;
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 768px) {
+  .doctorApplyWrapper {
+    flex-direction: column;
+  }
+
+  .leftImage,
+  .rightForm {
+    width: 100%;
+  }
+
+  .leftImage {
+    height: 200px;
+  }
+}

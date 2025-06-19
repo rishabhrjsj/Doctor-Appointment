@@ -1,0 +1,76 @@
+/* RoomPage.css */
+
+.room-page {
+    /* background-color: #afaced; */
+    color: #db6b6b;
+    margin-top: -30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .hero {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .hero-overlay {
+    /* Optional gradient or background */
+    /* background: linear-gradient(to right, black, purple, black); */
+    opacity: 0.7;
+  }
+  
+  .hero-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    margin-top: -30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    color: #490092;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    color: #000;
+    max-width: 600px;
+    margin-bottom: -50px;
+  }
+  
+  .room-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    margin-top: 10px;
+  }
+  
+  .room-card {
+    background-color: #2d2d2d;
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(128, 0, 128, 0.4);
+  }
+  
+  .room-id {
+    color: #ece5f9;
+    margin-bottom: 1rem;
+  }
+  
+  .video-box {
+    height: 600px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 1px solid #555;
+  }
+  

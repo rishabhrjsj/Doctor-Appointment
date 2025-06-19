@@ -1,0 +1,84 @@
+@import url(app.css);
+
+.profile-wrapper {
+  display: flex;
+  width: 80%;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(to right, #6905d4, #3e7deb);
+
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section {
+  flex: 2;
+}
+
+.profile-pic-large {
+  width: 200px;
+  height: 200px;
+  margin-top: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px solid #bcbced;
+}
+
+.profile-container {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-same-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.profile-container .form-input,
+.register-form .form-input {
+  width: 100%;
+}
+
+textarea.form-input {
+  resize: none;
+}
+
+.btn.form-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  width: 300px;
+  background-color: #560aa6;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .profile-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-pic-large {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .form-same-row {
+    flex-direction: column;
+  }
+}
